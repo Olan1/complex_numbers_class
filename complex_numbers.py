@@ -1,6 +1,7 @@
 # Import libraries/modules
 from numpy import sqrt
 
+
 class Complex:
      """
     A class used to represent a complex number. Each complex number instance
