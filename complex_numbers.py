@@ -1,7 +1,55 @@
+# Import libraries/modules
 from numpy import sqrt
 
 class Complex:
-    
+     """
+    A class used to represent a complex number. Each complex number instance
+    will have a real and an imaginary component.
+
+    ...
+
+    Args
+    ----------
+    real : TYPE, optional - Int/Float
+            DESCRIPTION. The default is 1. Real component of complex number
+    imag : TYPE, optional - Int/Float
+        DESCRIPTION. The default is 1. Imaginary component of complex number
+
+    Attributes
+    ----------
+    real : TYPE, optional - Int/Float
+            DESCRIPTION. The default is 1. Real component of complex number
+    imag : TYPE, optional - Int/Float
+        DESCRIPTION. The default is 1. Imaginary component of complex number
+
+    Methods
+    -------
+    __str__()
+        DESCRIPTION: Override the str magic method to return the real and imaginary parts
+                     of the complex number as a string.
+    setReal(real)
+        DESCRIPTION: Set the value of the real component
+    setImag(imag)
+        DESCRIPTION: Set the value of the imaginary component
+    getImag()
+        DESCRIPTION: Get the value of the real component
+    getImag()
+        DESCRIPTION: Get the value of the imaginary component
+    __add__(other)
+        DESCRIPTION: Override the add magic method to add two complex numbers
+    __sub__(other):
+        DESCRIPTION: Override the sub magic method to subtract two complex numbers
+    __mul__(other)
+        DESCRIPTION: Override the mul magic method to multiply two complex numbers
+    __truediv__(other)
+        DESCRIPTION: Override the truediv magic method to divide two complex numbers
+    __eq__(other)
+        DESCRIPTION: Override the eq magic method to determine if two complex numbers are equal
+    magnitude()
+        DESCRIPTION: Calculate the magnitude or length of a complex number
+    conj()
+        DESCRIPTION: Calculate the complex conjugate of a complex number
+    """
     def __init__(self, real=1, imag=1):
         """
 
@@ -25,7 +73,11 @@ class Complex:
         
     def __str__(self):
         """
-
+        Override the str magic method to return the real and imaginary parts
+        of the complex number as a string.
+        
+        ...
+        
         Returns
         -------
         str
@@ -41,6 +93,9 @@ class Complex:
         
     def setReal(self, real):
         """
+        Set the value of the real component
+        
+        ...
 
         Parameters
         ----------
@@ -57,7 +112,10 @@ class Complex:
     
     def getReal(self):
         """
-
+        Get the value of the real component
+        
+        ...
+        
         Returns
         -------
         TYPE - Float/Int
@@ -69,6 +127,9 @@ class Complex:
     
     def setImag(self, imag):
         """
+        Set the value of the imaginary component
+        
+        ...
 
         Parameters
         ----------
@@ -85,6 +146,9 @@ class Complex:
     
     def getImag(self):
         """
+        Get the value of the imaginary component
+        
+        ...
 
         Returns
         -------
@@ -97,6 +161,9 @@ class Complex:
         
     def __add__(self, other):
         """
+        Override the add magic method to add two complex numbers
+        
+        ...
 
         Parameters
         ----------
@@ -119,6 +186,9 @@ class Complex:
     
     def __sub__(self, other):
         """
+        Override the sub magic method to subtract two complex numbers
+        
+        ...
 
         Parameters
         ----------
@@ -141,6 +211,9 @@ class Complex:
     
     def __mul__(self, other):
         """
+        Override the mul magic method to multiply two complex numbers
+        
+        ...
 
         Parameters
         ----------
@@ -163,6 +236,9 @@ class Complex:
     
     def __truediv__(self, other):
         """
+        Override the truediv magic method to divide two complex numbers
+        
+        ...
 
         Parameters
         ----------
@@ -186,6 +262,9 @@ class Complex:
     
     def __eq__(self, other):
         """
+        Override the eq magic method to determine if two complex numbers are equal
+        
+        ...
 
         Parameters
         ----------
@@ -207,6 +286,9 @@ class Complex:
     
     def magnitude(self):
         """
+        Calculate the magnitude or length of a complex number
+        
+        ...
 
         Returns
         -------
@@ -220,6 +302,9 @@ class Complex:
     
     def conj(self):
         """
+        Calculate the complex conjugate of a complex number
+        
+        ...
 
         Returns
         -------
@@ -232,4 +317,3 @@ class Complex:
         imag = self.imag * -1
         # Return new instance of the Complex class
         return Complex(real,imag)
-      
